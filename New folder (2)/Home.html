@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiyaan Jattiem Online Resume</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden; /* Prevents scrolling due to video */
+        }
+        
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1; /* Places the video behind other content */
+        }
+        
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover; /* Ensures the video covers the entire area */
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1; /* Places content above the video */
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+            max-width: 800px;
+            margin: auto; /* Centers the content */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+        
+        h1 {
+            border: 2px solid lightblue;
+            background-color: gray;
+            padding: 15px;
+            border-radius: 8px; /* Rounded corners */
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        li {
+            border: 1px solid lightblue;
+            background-color: rgba(50, 50, 50, 0.8); /* Slightly transparent background */
+            margin: 10px 0; /* Spacing between items */
+            padding: 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        li:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+        }
+
+        h4 {
+            margin-top: 30px; /* Spacing above section headers */
+            border-bottom: 2px solid lightblue; /* Underline effect */
+            padding-bottom: 10px; /* Padding below header */
+            font-size: 1.5em;
+        }
+        
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        pre {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto; /* Allows scrolling for long text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Adjusts font size on smaller screens */
+            }
+
+            .content {
+                padding: 20px; /* Less padding for smaller devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="c:\Users\ZaiyaanJattiem\Downloads\3129576-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content">
+        <h1>Zaiyaan Jattiem Online Resume</h1>
+
+        <ul id="info">
+            <li><strong>Name:</strong> Zaiyaan Jattiem</li>
+            <li><strong>Title:</strong> Upcoming Programmer</li>
+            <li><strong>Location:</strong> Cape Town</li>
+            <li><strong>Email:</strong> <a href="mailto:zaiyaanj17@gmail.com">zaiyaanj17@gmail.com</a></li>
+            <li><strong>Website:</strong> <a href="https://github.com/RetroSuccess">GitHub</a></li>
+        </ul>
+
+        <h4>Summary</h4>
+        <pre>
+Someone who enjoys solving problems through programming and learning new technologies. 
+A gamer with an interest in game development. 
+Actively participates in online coding challenges and stays engaged with the latest trends in gaming and technology.
+        </pre>
+
+        <h4>Skills</h4>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+        </ul>
+
+        <h4>Education</h4>
+        <ul>
+            <li>HCIT in IT</li>
+            <li>BSC in IT</li>
+            <li>Richfield College, Cape Town</li>
+        </ul>
+
+        <h4>Projects</h4>
+        <ul>
+            <li>Project 1: Brief description here.</li>
+            <li>Project 2: Brief description here.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
